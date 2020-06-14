@@ -1,7 +1,144 @@
 <html>
-	<head></head>
+	<head>
+		<title>PouchDB Playground!</title>
+	</head>
 	<body>
-		<script src="pouchdb-7.1.1.min.js"></script>
-		<script src="pouchdb.find.js"></script>
+		<div id="content">
+			<h1>PouchDB Playground!</h1>
+			<h2>Go to Developer Tools</h2>
+			<img src="images/open_dev_tools.png"/>
+			<h2>Go to Console</h2>
+			<img src="images/open_console.png"/>
+			<h2>Start Using PouchDB!</h2>
+			<img src="images/lets_pouch.png"/>
+		</div>
+		
+		<!-- PouchDB dependency -->
+		<script src="js/pouchdb/pouchdb-7.1.1.min.js"></script>
+
+		
+		<!-- PouchDB Plugins and such -->
+
+		<!-- GeoPouch! -->
+		<!--------------->
+		<script src="js/pouchdb/plugins/geopouch.js"></script>
+		<!--------------->
+
+		<!-- Mango Queries! -->
+		<!-------------------->
+		<script src="js/pouchdb/plugins/pouchdb.find.js"></script>
+		<!-------------------->
+
+		<!-- Adapters! -->
+		<!--------------->
+		<!-- Browser Memory Adapter-->
+		<script src="js/pouchdb/plugins/pouchdb.memory.min.js"></script>
+		<!-- Browser LocalStorage Adapter-->
+		<script src="js/pouchdb/plugins/pouchdb.localstorage.min.js"></script>
+		<!--------------->
+
+		<!-- Delete Replicated Databases! -->
+		<!---------------------------------->
+		<script src="js/pouchdb/plugins/pouchdb-erase.min.js"></script>
+		<!---------------------------------->
+
+		<!-- Upsert and PutIfNotExists! -->
+		<!------------->
+		<script src="js/pouchdb/plugins/pouchdb.upsert.min.js"></script>
+		<!------------->
+
+		<!-- Every Doc is a Delta Helper! -->
+		<!---------------------------------->
+		<script src="js/pouchdb/plugins/pouchdb.delta-pouch.min.js"></script>
+		<!---------------------------------->
+
+		<!-- Replication Stream to Dump in Files! -->
+		<!------------------------------------------>
+		<script src="js/pouchdb/plugins/pouchdb.replication-stream.min.js"></script>
+		<!------------------------------------------>
+
+		<!-- Pouch Load to Load from Files! -->
+		<!------------------------------------>
+		<script src="js/pouchdb/plugins/pouchdb.load.min.js"></script>
+		<!------------------------------------>
+
+		<!-- Debug! -->
+		<!------------>
+		<script src="js/pouchdb/plugins/pouchdb.debug.min.js"></script>
+		<!------------>
+
+		<!-- SocketPouch! -->
+		<!------------------>
+		<script src="js/pouchdb/plugins/socket-pouch.client.min.js"></script>
+		<!------------------>
+
+		<!-- Transform Pouch-->
+		<!-------------------->
+		<script src="js/pouchdb/plugins/pouchdb.transform-pouch.min.js"></script>
+		<!-------------------->
+
+		<!-- PouchDB Full Sync! -->
+		<!------------------------------------>
+		<script src="js/pouchdb/plugins/pouchdb.full-sync.min.js"></script>
+		<!------------------------------------>
+
+		<!-- Be more CouchDB-like! -->
+		<!--------------------------->
+		<script src='js/pouchdb/plugins/pouchdb-validation.min.js'></script>
+		<script src='js/pouchdb/plugins/pouchdb-show.min.js'></script>
+		<script src='js/pouchdb/plugins/pouchdb-list.min.js'></script>
+		<script src='js/pouchdb/plugins/pouchdb-update.min.js'></script>
+		<script src='js/pouchdb/plugins/pouchdb-rewrite.min.js'></script>
+		<script src='js/pouchdb/plugins/pouchdb-replicator.min.js'></script>
+		<!--------------------------->
+
+		<!-- Mirror in Memory! -->
+		<!----------------------->
+		<script src="js/pouchdb/plugins/pouch-mirror.min.js"></script>
+		<!----------------------->
+
+		<!-- Easier Conflict Resolution! -->
+		<!--------------------------------->
+		<script src="js/pouchdb/plugins/pouch-resolve-conflicts.js"></script>
+		<!--------------------------------->
+
+		<!-- Block the DOM less! -->
+		<!--------------------------------->
+		<script src="js/pouchdb/plugins/pouchdb.worker-pouch.min.js"></script>
+		<!--------------------------------->
+
+		<!-- Blob Util! (Technically not part of PouchDB) -->
+		<!-------------------------------------------------->
+		<script src="js/blob-util/blob-util.min.js"></script>
+		<!-------------------------------------------------->
+
+		<!-- List All Databases! -->
+		<!------------------------->
+		<script src="js/pouchdb/plugins/pouchdb.all-dbs.min.js"></script>
+		<!------------------------->
+
+		<!-- Authentificator! -->
+		<!---------------------->
+		<script src="js/pouchdb/plugins/pouchdb.authentication.min.js"></script>
+		<!---------------------->
+
+		<!-- Pouch Plugin Creator! -->
+		<!--------------------------->
+		<script src="js/pouchdb/plugins/pouchdb.mypluginname.min.js"></script>
+		<!--------------------------->
+
+		<!-- Crypto Pouch -->
+		<!------------------>
+		<script src="js/pouchdb/plugins/crypto-pouch.js"></script>
+		<!------------------>
+
+		<!-- Relational in PouchDB! -->
+		<!---------------------------->
+		<script src="js/pouchdb/plugins/pouchdb.relational-pouch.browser.js"></script>
+		<!---------------------------->
+
+		<!-- See More! -->
+		<!-- https://pouchdb.com/external.html -->
+		<!-- https://github.com/pouchdb/pouchdb/tree/master/packages/node_modules -->
 	</body>
 </html>
